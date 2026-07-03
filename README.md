@@ -1,5 +1,9 @@
 # FEDEX-SQL-PROJECT  
 
+
+## Screenshots
+### 1. Average Delay(in hours) per Route ID:![average delay per route id]() 
+
 ## Key Insights & Business Recommendations
 
 ### Core Analytical Insights
