@@ -50,8 +50,35 @@ Shipment_ID, Order_ID, Agent_ID, Route_ID, Warehouse_ID, Pickup_Date, Delivery_D
 
 --- 
 
+## Tools and Technologies
+* SOL Querying
+* Power BI Visualization
+* Interactive Dashboard Design
+
+ ---
+ 
+## Key Business Metrics and SQL Solutions
+### 1.The Question: 
+To calculate "DISTANCE-TO-TIME EFFICIENCY RATIO = DISTANCE_KM / AVG_TRANSIT_TIME_HOURS".
+Metric: Distance-to-Time Efficiency Ratio (Route Velocity Analytics)
+
+*The Business Problem:* How quickly are goods moving across our global transit lanes? Simply looking at total transit time doesn't tell the whole story—a long-distance route will naturally take more hours than a short one. To fairly evaluate route performance, we need to calculate the *effective speed (KM per Hour)* for each route. Identifying paths with an abnormally low efficiency ratio allows logistics managers to flag structural bottlenecks, complex customs checkpoints, or slow carrier segments.
+
+*The SQL Solution:*
+```SELECT Route_ID,  Source_City, Destination_City, Distance_KM, Avg_Transit_Time_Hours, ROUND(Distance_KM / Avg_Transit_Time_Hours, 2) AS Efficiency_Ratio_KMH FROM fedex_routes ORDER BY Efficiency_Ratio_KMH DESC;```
+Key Insight from Visual Output:
+​The data exposes a massive performance delta across the network:
+​Top Performers: Long-haul air channels like Johannesburg to Dubai (R019) operate at peak efficiency with a velocity of 545.49 KM/H, closely followed by Los Angeles to Amsterdam (R010) at 540.34 KM/H. This indicates highly optimized flight paths and rapid customs clearance.
+​
 
 
+
+
+
+
+
+
+---
 
 
 ## Screenshots
