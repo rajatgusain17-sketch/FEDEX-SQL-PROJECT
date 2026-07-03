@@ -3,7 +3,7 @@
 
 ## Screenshots
 ### 1. Average Delay(in hours) per Route ID:![average delay per route id](https://github.com/rajatgusain17-sketch/FEDEX-SQL-PROJECT/blob/main/Avg%20delapy%20per%20route%20id.png?raw=true)   
-### 2. On Time Delivery %:![on time delivery %]()
+### 2. On Time Delivery %:![on time delivery %](https://github.com/rajatgusain17-sketch/FEDEX-SQL-PROJECT/blob/main/on%20timedelivery%20%25.png?raw=true)
 ### 3. Average Delivery Delay per Source Country:![average delivery delay]()
 ## Key Insights & Business Recommendations
 
